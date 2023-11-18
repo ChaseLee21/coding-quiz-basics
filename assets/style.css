@@ -1,0 +1,59 @@
+.left-corner {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    font-size: 36px;
+    color: blueviolet;
+  }
+    
+  .right-corner {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    font-size: 36px;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 50px;
+    padding-top: 100px;
+  }
+  
+  main p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .answers {
+    display: none;
+  }
+
+  #correct {
+    display: none;
+    color: green;
+  }
+
+  #wrong {
+    display: none;
+    color: red;
+  } 

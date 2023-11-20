@@ -101,6 +101,7 @@ function checkAnswer() {
 
 function showScore() {
     clearInterval(timer);
+    document.querySelector("#userScore").innerHTML = "Your score is: " + timeLeft;
     submitScore.style.display = "flex";
     quiz.style.display = "none";
 }
@@ -136,6 +137,10 @@ submitScoreBtn.addEventListener("click", function (event) {
     let score = {
         score: timeLeft,
         initials: document.getElementById("initials").value
+    }
+    if (score.initials === "") {
+        alert("Please enter your initials");
+        return;
     }
     let scores = JSON.parse(localStorage.getItem("scores"));
     if (scores === null) {

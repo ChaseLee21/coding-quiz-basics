@@ -9,37 +9,37 @@
   </head>
   <body>
     <main>
-        <!-- quiz -->
+        <!-- Quiz Container -->
         <section class="center-content" id="quiz">
-            <!-- view highscore button -->
             <header>
-                <div class="left-corner">
+                <!-- Toggle Leaderboard -->
+                <div>
                     <a onclick="showLeaderBoard()">View high scores</a> 
                 </div>
-                  <!-- timer -->
-                  <div class="right-corner">
-                    <p id="timeDisplay"></p>
+                <!-- Quiz Timer -->
+                <div>
+                    <a id="timeDisplay"></a>
                 </div>
             </header>
-            <!-- quiz -->
+            <!-- Quiz -->
             <h1>Coding Quiz Challenge</h1>
-            <p id="question">
+            <p id="question" class="center-flex">
                 Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time/score by ten seconds!
             </p>
-            <div class="answers">
+            <div class="answers center-flex">
                 <button id="btn1">Button 1</button>
                 <button id="btn2">Button 2</button>
                 <button id="btn3">Button 3</button>
                 <button id="btn4">Button 4</button>
             </div>
             <div>
-                <p id="correct">correct</p>
-                <p id="wrong">wrong</p>
+                <p id="correct">Correct</p>
+                <p id="wrong">Wrong</p>
             </div>
             <button id="startButton" onclick="startQuiz()">Start Quiz</button>
         </section>
-        <!-- submit score -->
-        <section class="center-content" id="submitScore">
+        <!-- Submit Score Container -->
+        <section id="submitScore">
             <h1>Add your score to the leaderboard</h1>
             <p id="userScore"></p>
             <form>
@@ -48,14 +48,15 @@
                 <input type="submit" value="Submit" id="submitScoreBtn">
             </form>
         </section>
-        <!-- leaderboard -->
-        <section class="center-content" id="leaderBoard">
+        <!-- Leaderboard Container-->
+        <section id="leaderBoard">
             <header>
-                <div class="left-corner">
-                    <!-- TODO: change between quiz and leaderboard -->
+                <!-- Refresh Quiz -->
+                <div>
                     <a onclick="startScreen()">Go back to quiz</a> 
                 </div>
             </header>
+            <!-- Leaderboard -->
             <h1>High Scores</h1>
             <button onclick="resetLeaderBoard()">Reset Leaderboard</button>
             <ol id="scores">

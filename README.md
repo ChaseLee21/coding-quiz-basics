@@ -32,7 +32,7 @@ https://chaselee21.github.io/coding-quiz-basics/
 For this project I worked with my two class mates. Here are there github pages to their repository.
 We worked the script together and the html page, but styled our pages seperately
 
-    -Shelby Hutchinson: 
+    -Shelby Hutchinson: https://github.com/shhutc18/Code-Quiz
     -Will Schickler: 
 
 ## License
